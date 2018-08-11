@@ -1,19 +1,19 @@
-Source: limnoria
+Source: limnoria-gnupg
 Section: net
 Priority: optional
 Maintainer: Valentin Lorentz <progval@progval.net>
-Build-Depends: debhelper (>=3.9.2), dh-python, cdbs (>= 0.4.90~), python3 (>=3.2), python3-setuptools
-XS-Python-Version: >=3.2
+Build-Depends: debhelper (>=3.9.2), dh-python, cdbs (>= 0.4.90~), python3 (>=3.4), python3-setuptools
+XS-Python-Version: >=3.4
 Standards-Version: 3.9.2
 
-Package: limnoria
+Package: limnoria-gnupg
 Architecture: all
-Depends: python3 (>=3.2), dh-python, ${misc:Depends}
+Depends: python3 (>=3.4), dh-python, ${misc:Depends}
 Recommends: python3-simplejson, python3-feedparser, python3-sqlite3
-Suggests: python3-twisted-core, python3-twisted-names, python3-dictclient, python3-dateutil, python3-gnupg, python3-sqlalchemy
-Conflicts: supybot
-Provides: supybot
-Replaces: supybot
+Suggests: python3-twisted-core, python3-twisted-names, python3-dictclient, python3-dateutil, python3-sqlalchemy, libgpgme, libgpgme-dev
+Conflicts: supybot, limnoria
+Provides: supybot, limnoria
+Replaces: supybot, limnoria
 Section: net
 Priority: optional
 Homepage: https://github.com/ProgVal/Limnoria

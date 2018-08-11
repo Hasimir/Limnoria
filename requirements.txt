@@ -1,9 +1,10 @@
 chardet
 pytz
 python-dateutil
-python-gnupg
 feedparser
 sqlalchemy
 PySocks
 mock
 ecdsa
+gpg>=1.11.1
+
